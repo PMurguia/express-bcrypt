@@ -17,3 +17,7 @@ app.get('/adios', function(req, res){
 app.get('/:name', function(req, res){
     res.send(`<h1>Hola ${req.params.name}</h1>`)
 })
+
+app.get('/adios/:name', function(req, res){
+    res.send(`<h2>adios ${req.params.name}}</h2>`)
+})
