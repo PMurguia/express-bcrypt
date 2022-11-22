@@ -21,3 +21,7 @@ app.get('/:name', function(req, res){
 app.get('/adios/:name', function(req, res){
     res.send(`<h2>adios ${req.params.name}}</h2>`)
 })
+
+app.get('/hola/:name', function(req, res){
+    res.send(`<h2>hola ${req.params.name}}</h2>`)
+})
