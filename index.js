@@ -13,3 +13,7 @@ app.get('/', function(req, res){
 app.get('/adios', function(req, res){
     res.send('<h2>adios mundo</h2>')
 })
+
+app.get('/adios/:name', function(req, res){
+    res.send(`<h2>adios ${req.params.name}}</h2>`)
+})
